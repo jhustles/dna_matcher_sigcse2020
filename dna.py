@@ -9,6 +9,15 @@ def main():
 
     #Open the DNA database CSV file, read via DictReader
     database = open(sys.argv[1]) # Remember what is open, must be closed later.
-    data. csv.DictReader(database)
+    data = csv.DictReader(database)
 
+    dna_file = sys.argv[2]
+    with open(dna_file) as f: # with open method closes it on it's own.
+        sequence = f.read()
     
+
+
+
+
+
+main()
