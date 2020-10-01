@@ -15,7 +15,11 @@ def main():
     with open(dna_file) as f: # with open method closes it on it's own.
         sequence = f.read()
     
+        # Instantiate a dictionary data structure to count/track of the target sequence file consecutive DNA STR matches
+    str_keys = data.fieldnames[1:] # Column names in the csv file
 
+    for sub_str in str_keys:
+        counts[sub_str] = max_consecutive_matches(sequence, sub_str)
 
 
 
