@@ -15,13 +15,30 @@ def main():
     with open(dna_file) as f: # with open method closes it on it's own.
         sequence = f.read()
     
-        # Instantiate a dictionary data structure to count/track of the target sequence file consecutive DNA STR matches
+    # Instantiate a dictionary data structure to count/track of the target sequence file consecutive DNA STR matches
+    counts = {}
     str_keys = data.fieldnames[1:] # Column names in the csv file
 
     for sub_str in str_keys:
         counts[sub_str] = max_consecutive_matches(sequence, sub_str)
 
+    # Iterate thru each row in the data for matching DNA profile
+    for row in data:
+        # Extract the current row in the csv file and store in an array for comparison
+        extracted_db_row = [int(row[sub_str]) for sub_str in counts]
+        # Extract the target strs values from the dictionary and store in an array for comparision
+        target = [int(counts[sub_str]) for sub_str in counts]
+        # if both arrays counts of consecutive matches for each respective str matches,
+        # then print the name from the database, and close the database.
+        if target == extracted_db_row:
+            print(row['name'])
+            database.close()
+            return
 
+
+def max_consecutive_matches(seq, str):
+    pass
+    return
 
 
 main()
