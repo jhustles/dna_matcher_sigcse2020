@@ -34,6 +34,10 @@ def main():
             print(row['name'])
             database.close()
             return
+    # Else, in the event we didn't find a match, print that and close.
+    print("No match")
+    database.close()
+    
 
 
 def max_consecutive_matches(seq, str):
