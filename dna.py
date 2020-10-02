@@ -48,5 +48,8 @@ def max_consecutive_matches(seq, str):
         count = 0 # Count consecutive matches
         while True: # while we find a match, we will keep on looping
             start = i + length * count
-            
+            end = start + length
+            if sequence[start:end] == sub_str:
+                count += 1
+
 main()
