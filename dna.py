@@ -16,7 +16,6 @@ def main():
     with open(dna_file) as f:
         sequence = f.read()
 
-
     # Get the counts for each STR (column titles in the data.csv after "name")
     # Create a dictionary to track counts of target's dna str counts
     counts = {}
@@ -46,7 +45,6 @@ def main():
     # Else, in the event we didn't find a match, print that and close.
     print("No match")
     database.close()
-
 
 def max_consecutive_matches(sequence, sub_str):
     match_counter = 0
