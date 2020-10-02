@@ -41,8 +41,8 @@ def main():
 
 
 def max_consecutive_matches(seq, str):
-    pass
-    return
+    match_counter = 0
+    length = len(sub_str) # Length of each STR from the csvfile
 
 
 main()
