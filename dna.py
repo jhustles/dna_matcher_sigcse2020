@@ -66,6 +66,7 @@ def max_consecutive_matches(seq, str):
                 break
 # match_counter = max(match_counter, count)
         if count > match_counter:
+            match_counter = count
 
 
 main()
