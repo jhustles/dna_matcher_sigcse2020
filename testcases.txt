@@ -1,0 +1,20 @@
+python dna.py databases/small.csv sequences/1.txt. Your program should output Bob.
+python dna.py databases/small.csv sequences/2.txt. Your program should output No match.
+python dna.py databases/small.csv sequences/3.txt. Your program should output No match.
+python dna.py databases/small.csv sequences/4.txt. Your program should output Alice.
+python dna.py databases/large.csv sequences/5.txt. Your program should output Lavender.
+python dna.py databases/large.csv sequences/6.txt. Your program should output Luna.
+python dna.py databases/large.csv sequences/7.txt. Your program should output Ron.
+python dna.py databases/large.csv sequences/8.txt. Your program should output Ginny.
+python dna.py databases/large.csv sequences/9.txt. Your program should output Draco.
+python dna.py databases/large.csv sequences/10.txt. Your program should output Albus.
+python dna.py databases/large.csv sequences/11.txt. Your program should output Hermione.
+python dna.py databases/large.csv sequences/12.txt. Your program should output Lily.
+python dna.py databases/large.csv sequences/13.txt. Your program should output No match.
+python dna.py databases/large.csv sequences/14.txt. Your program should output Severus.
+python dna.py databases/large.csv sequences/15.txt. Your program should output Sirius.
+python dna.py databases/large.csv sequences/16.txt. Your program should output No match.
+python dna.py databases/large.csv sequences/17.txt. Your program should output Harry.
+python dna.py databases/large.csv sequences/18.txt. Your program should output No match.
+python dna.py databases/large.csv sequences/19.txt. Your program should output Fred.
+python dna.py databases/large.csv sequences/20.txt. Your program should output No match.
